@@ -1,0 +1,136 @@
+body{
+    background-color: black;
+    font-family: 'Poppins';
+    text-align: center;
+    color: white;
+    animation: animasiBody 5s ease alternate;
+}
+h1{
+    cursor: default;
+    color: rgba(255, 255, 255, 0.733);
+    transition: all 0.5s ease;
+}
+h2{
+    cursor: default;
+    color: rgba(255, 255, 255, 0.733);
+    transition: all 0.5s ease;
+    text-decoration: overline;
+}
+h1:hover, h2:hover{
+    color: white;
+    transform: translateY(-5px);
+}
+table{
+    cursor: default;
+    text-align: start;
+    margin-top: 20px;
+    width: 100%;
+}
+table tr td{
+    padding: 20px;
+    font-size: 18px;
+    transition: all 0.5s linear;
+}
+table tr th{
+    padding: 10px;
+    font-size: 22px;
+    transition: all 0.5s linear;
+}
+table tr td:hover, table tr th:hover{
+    background-color: white;
+    color: black;
+}
+table::after, table::before{
+    content: "";
+    width: 3%;
+    height: 0.5%;
+    border-radius: 30%;
+    background-color: white;
+    box-shadow: 1px 1px 20px white;
+    position: absolute;
+}
+table::after{
+    left: 0%;
+    animation: animasiAfter 8s ease alternate infinite;
+}
+table::before{
+    right: 0%;
+    animation: animasiBefore 8s ease alternate infinite;
+}
+img{
+    transform: translateY(5px);
+    width: 200px;
+    box-shadow: 1px 1px 20px black;
+    border-radius: 20%;
+    animation: animasiImg 3s linear alternate infinite;
+}
+@keyframes animasiBody {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes animasiAfter {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 95%;
+    }
+}
+@keyframes animasiBefore {
+    0%{
+        right: 0%;
+    }
+    100%{
+        right: 95%;
+    }
+}
+@keyframes animasiImg {
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+@media screen and (max-width: 800px){
+    h1, h2{
+        color: white;
+    }
+    table::after, table::before{
+        height: 0.3%;
+    }
+    table tr td{
+    	padding: 5px;
+        font-size: 12px;
+    }
+    table tr th{
+    	padding: 5px;
+        font-size: 14px;
+    }
+    img{
+        width: 100px;
+    }
+}
+@media screen and (max-width: 600px){
+    h1, h2{
+        color: white;
+    }
+    table::after, table::before{
+        height: 0.1%;
+    }
+    table tr td{
+    	padding: 5px;
+        font-size: 8px;
+    }
+    table tr th{
+    	padding: 5px;
+        font-size: 10px;
+    }
+    img{
+        width: 80px;
+    }
+}

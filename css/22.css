@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(223, 219, 219);
+    font-family: Ariel;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+}
+table{
+    width: 100%;
+    text-align: start;
+}
+img{
+  width: 200px;
+  border-radius: 20%;
+}
+
+table tr td:hover, table tr th:hover{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    color:rgb(12, 0, 0);
+    font-family: fantasy;
+    font-size: 200%;
+    text-decoration-line: overline;
+    letter-spacing: 5px;
+}
+
+h2{
+    color: rgb(14, 12, 12);
+    font-size:150%;
+    text-decoration-line: underline;
+    letter-spacing: -3px;
+}
+tr td{
+    padding:20px;
+}

@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: black url('../gambar/wputama.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins';
+    color:white;
+    height: 90vh;
+}
+
+
+form{
+    
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+form :hover {
+    color: white ;
+    background: #07CEFF;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    border-style: hidden;
+    transition: all 0.5s ease;
+
+}
+
+
+
+button{
+    color: white;
+    font-size: 20px;
+    background-color: #255784;
+
+}

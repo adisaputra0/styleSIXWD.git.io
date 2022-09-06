@@ -1,0 +1,92 @@
+body{
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    color: white;
+    width: 97%;
+    height: 97.5vh;
+}
+h1{
+    text-align: center;
+}
+h1::after,
+h1::before{
+    content: "";
+    width: 30%;
+    height: 30%;
+    border-radius: 5%;
+    position: absolute;
+}
+h1::after{
+    top: 2%;
+    left: 2%;
+    box-shadow: 1px 1px 20px rgb(0, 255, 255);
+    background-color: aqua;
+    animation: animasiH1After 80s linear alternate infinite;
+}
+h1::before{
+    bottom: 2%;
+    right: 2%;
+    box-shadow: 1px 1px 20px rgb(255, 48, 48);
+    background-color: rgb(255, 48, 48);
+    animation: animasiH1Before 80s linear alternate infinite;
+}
+button{
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    transform: scale(1.5);
+    border: 0;
+    transition: all 0.5s ease;
+}
+button:hover{
+    transform: scale(2);
+}
+
+@keyframes animasiH1After {
+    0%{
+        top: 2%;
+        left: 2%;
+    }
+    30%{
+        top: 2%;
+        left: 68%;
+    }
+    50%{
+        top: 68%;
+        left: 68%;
+    }
+    80%{
+        top: 68%;
+        left: 2%;
+    }
+    100%{
+        top: 2%;
+        left: 2%;
+    }
+}
+@keyframes animasiH1Before {
+    0%{
+        bottom: 2%;
+        right: 2%;
+    }
+    30%{
+        bottom: 2%;
+        right: 68%;
+    }
+    50%{
+        bottom: 68%;
+        right: 68%;
+    }
+    80%{
+        bottom: 68%;
+        right: 2%;
+    }
+    100%{
+        bottom: 2%;
+        right: 2%;
+    }
+}

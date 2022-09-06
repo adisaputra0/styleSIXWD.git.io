@@ -1,0 +1,78 @@
+*{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+body{
+    opacity: animasiBody 1s ease-in alternate forwards;
+}
+h1{
+    font-weight: bold;
+    cursor: default;
+    transition: all 0.3s linear;
+    background: rgb(156, 156, 156);
+}
+h1:hover{
+    transform: skew(-5deg) translateY(-5px);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 15%;
+}
+table{
+    width: 100%;
+    border-color: white;
+}
+img{
+    margin-left: -50px;
+    width: 250px;
+    border-radius: 10%;
+    border: 1px solid rgb(161, 161, 161);
+    box-shadow: 1px 1px 10px black;
+    transition: all 0.5s ease;
+}
+img:hover{
+    bottom: -15px 15px 10px black;
+    transform: skewX(10deg);
+    animation: animasilmg 3s ease alternate infinite;
+}
+table tr th{
+    font-size: 30px;
+    cursor: default;
+    transition: all 0.5s linear;
+}
+table tr th:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+table tr td{
+    padding: 10px;
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 20px;
+    cursor: default;
+    transition: all 0.5s linear;
+}
+table tr td:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+@keyframes animasiImg{
+    0%{
+        transform: skewX(10deg);
+        box-shadow: -15px 15px 10px rgb(0, 0, 0);
+    }
+    100%{
+        transform: skewX(-10deg);
+        box-shadow: 15px 15px 10px rgb(0, 0, 0);
+    }
+}
+@keyframes animasiBody {
+    0%{
+        opacity: 0%;
+        transition: all 0.5s ease;
+    }
+    100%{
+        opacity: 100%;
+    }
+}

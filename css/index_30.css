@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(66, 37, 107);
+    font-family: 'Lucky Skirt';
+    color:  rgb(255, 169, 169);
+    font-size: 35px;
+    height: 90vh;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 30px;
+    font-family: 'Lucky Skirt';
+    cursor: pointer;
+    border-color: rgb(176, 185, 230);
+    color: rgb(66, 37, 107);   
+}
+button:hover {
+    background-color: rgb(176, 185, 230);
+    color: rgb(66, 37, 107);
+}
